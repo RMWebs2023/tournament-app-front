@@ -1,31 +1,30 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 
 
 const Login = () => {
   return (
     <>
-      <div>Wally its gay</div>
-      <div>
-        <div className="login_background">
-          <div className="shape"></div>
-          <div className="shape"></div>
-        </div>
+      <div className="login_background">
+        <div className="shape"></div>
+        <div className="shape"></div>
       </div>
-      <form>
-        <h3>Login here</h3>
 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username"></input>
+      <form className="login_form">
+        <h3 className="login_form-title">Login</h3>
 
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password"></input>
+        <label className="login_form-label" for="username">Usuario</label>
+        <input className="login_form-input" type="text" placeholder="Email o DNI" id="username"></input>
 
-        <button>Log In</button>
-        <div className="social">
-          <div className="login_go"><FaGoogle /> Google</div>
-          <div className="login_fb"><FaFacebookF /> Facebook</div>
+        <label className="login_form-label" for="password">Contraseña</label>
+        <input className="login_form-input" type="password" placeholder="Contraseña" id="password"></input>
+
+        <button className="login_form-button">Log In</button>
+
+        <div className="login_form-social">
+          <div className="login_form-social-net"><FaGoogle className="go"/> Google</div>
+          <div className="login_form-social-net"><FaFacebookSquare className="fb"/> Facebook</div>
         </div>
       </form>
     </>
